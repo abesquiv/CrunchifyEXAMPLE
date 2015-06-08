@@ -29,7 +29,7 @@ public class CtoKService {
   @Path("{ck}")
   @GET
   @Produces("application/json")
-  public Response convertCtoKfromInput(@PathParam("c") float c) throws JSONException {
+  public Response convertCtoKfromInput(@PathParam("ck") float c) throws JSONException {
     JSONObject jsonObject = new JSONObject();
     
     float fahrenheit;

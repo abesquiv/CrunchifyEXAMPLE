@@ -28,7 +28,7 @@ public class FtoCService {
 	  @Path("{fc}")
 	  @GET
 	  @Produces("application/json")
-	  public Response convertFtoCfromInput(@PathParam("f") float f) throws JSONException {
+	  public Response convertFtoCfromInput(@PathParam("fc") float f) throws JSONException {
  
   		JSONObject jsonObject = new JSONObject();
   		float celsius;

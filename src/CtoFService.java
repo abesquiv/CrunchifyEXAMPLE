@@ -52,7 +52,7 @@ public class CtoFService {
 	@Path("{cf}")
 	@GET
 	@Produces("application/json")
-	public Response convertCtoFfromInput(@PathParam("c") float c) throws JSONException {
+	public Response convertCtoFfromInput(@PathParam("cf") float c) throws JSONException {
 		JSONObject jsonObject = new JSONObject();
 		float celsius;
 		float fahrenheit;

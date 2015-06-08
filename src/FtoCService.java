@@ -25,7 +25,7 @@ public class FtoCService {
   		return Response.status(200).entity(result).build();
 	  }
  
-	  @Path("{f}")
+	  @Path("{fc}")
 	  @GET
 	  @Produces("application/json")
 	  public Response convertFtoCfromInput(@PathParam("f") float f) throws JSONException {

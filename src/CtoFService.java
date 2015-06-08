@@ -49,10 +49,10 @@ public class CtoFService {
 //		String result = "@Produces(\"application/xml\") Output: \n\nC to F Converter Output: \n\n" + fahrenheit;
 //		return "<ctofservice>" + "<celsius>" + celsius + "</celsius>" + "<ctofoutput>" + result + "</ctofoutput>" + "</ctofservice>";
 //	}
-	@Path("{c}")
+	@Path("{cf}")
 	@GET
 	@Produces("application/json")
-	public Response convertCtoFromInput(@PathParam("c") float c) throws JSONException {
+	public Response convertCtoFfromInput(@PathParam("c") float c) throws JSONException {
 		JSONObject jsonObject = new JSONObject();
 		float celsius;
 		float fahrenheit;

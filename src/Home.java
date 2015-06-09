@@ -12,7 +12,7 @@ public class Home {
   @GET
   @Produces("application/json")
   public Response convertFtoC() throws JSONException {
-    String result = "use /ctofservice/35 to convert 35 Celsius to Fahrenheit \n\nother services include \n\nftocservice\nctokservice";
+    String result = "append /ctofservice/35 to the url in order to convert 35 Celsius to Fahrenheit \n\nOther services include: \n\nftocservice\nctokservice";
     return Response.status(200).entity(result).build();
   }
 
